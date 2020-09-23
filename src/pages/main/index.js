@@ -1,8 +1,18 @@
 import React,  { Component } from 'react';
-import api from '../../services/api';
+import Header from  '../../components/Header';
+import ImgBackground from '../../assets/background-home.jpg';
+import './styles.css';
 
 export default class Main extends Component {
   render() {
-    return <h1>Helloooo</h1>
+    return (
+      <div className="main">
+        <Header />
+        <img src={ImgBackground} className='banner' />
+        <footer>
+          @2020 Created with love by Maria Clara &#10083;
+        </footer>
+      </div>
+    );
   }
 }

@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+.banner {
+  margin-top: -5px;
+  max-width: 100%;
+  background-color: #f2585a;
+  position: static;
+  margin-bottom: 10px;
+}
