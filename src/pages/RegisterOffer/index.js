@@ -44,8 +44,8 @@ const RegisterOffer = () => {
     return (
       <>
         <Header />
-        <div className="oc-register">
-          <div className="oc-register-content">
+        <div className="container">
+          <div className="content">
             <h1>Register Offer</h1>
             <form action="">
               {"Brand"}

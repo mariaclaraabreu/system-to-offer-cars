@@ -16,3 +16,17 @@ button {
   padding: 10px;
   cursor: pointer;
 }
+
+.container {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 40px;
+  background: #fff;
+  width: 50%;
+}

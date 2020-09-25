@@ -12,13 +12,13 @@ button:hover {
 .blue {
   background-color: #1E5991;
   color: #ffffff;
-  width: 40%;
+  padding: 10px 20px 10px 20px;
 }
 
 .orange {
   background-color: #f2585a;
   color: #ffffff;
-  width: 40%;
+  padding: 10px 20px 10px 20px;
 }
 
 .button-component {
