@@ -8,7 +8,7 @@ export default class Main extends Component {
     return (
       <div className="main">
         <Header />
-        <img src={ImgBackground} className='banner' />
+        <img src={ImgBackground} className='banner' alt='Background' />
         <footer>
           @2020 Created with love by Maria Clara &#10083;
         </footer>

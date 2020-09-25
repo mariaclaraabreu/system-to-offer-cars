@@ -1,0 +1,26 @@
+button {
+  background-color: tomato;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+button:hover {
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.blue {
+  background-color: #1E5991;
+  color: #ffffff;
+  width: 40%;
+}
+
+.orange {
+  background-color: #f2585a;
+  color: #ffffff;
+  width: 40%;
+}
+
+.button-component {
+  color: #ffffff;
+}

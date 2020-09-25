@@ -1,0 +1,21 @@
+.oc-register {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-register-content {
+  padding: 40px;
+  background: #fff;
+  width: 50%;
+}
+
+.button-add {
+  background: #1E5991 ;
+}
+
+h1 {
+  margin-bottom: 25px;
+}

@@ -3,6 +3,7 @@ header#oc-header{
   height: 80px;
   background: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
