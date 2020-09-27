@@ -1,0 +1,36 @@
+ul .oc-item-list {
+  /* display: flex;
+  flex-direction: row; */
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.oc-elem-item {
+  /* display: flex;
+  flex-direction: row; */
+  /* width: 30%; */
+  /* margin-right: 30px; */
+  display: inline-block;
+
+}
+
+.oc-elem-item img {
+  width: 70px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.oc-options-item {
+  margin-left: 35%;
+}
+
+.button-list {
+
+}
+
+.button-list .button-edit {
+  
+}

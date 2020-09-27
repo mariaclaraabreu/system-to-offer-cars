@@ -16,7 +16,7 @@ const Header = () => (
           Offers
         </button>
       </Link>
-      <Link to='/'>
+      <Link to='/administration'>
         <button className="oc-button">
           Administration
         </button>

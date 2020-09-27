@@ -5,7 +5,11 @@ import Header from '../../components/Header';
 import Input from '../../components/Input';
 import firebase from '../../services/api'
 import Button from '../../components/Button'
-import BeetleImg from '../../assets/beetle.jpg'
+import { List, Avatar } from 'antd';
+import OfferItem from  '../../components/OfferItem';
+import BeetleImg from '../../assets/beetle.jpg';
+import './styles.css';
+
 
 // const { Search } = Input
 
@@ -80,10 +84,24 @@ const Administration = () => {
           />
           <ul>
             {filteredOffers.map(item => (
-              <li>{item.brand}</li>
+              <OfferItem 
+                key={item.id}
+                brand={item.brand}
+                model={item.model}
+                onClickEdit={() => handleYetImplemented(item.id)}
+                onClickDelete={() => handleDeleteOffer(item.id)}
+              >
+                <button>oi</button>
+              </OfferItem>
             ))}
 
           </ul>
+
+
+          <OfferItem />
+
+
+          
 
           <Link to='/newoffer'>
             <Button
