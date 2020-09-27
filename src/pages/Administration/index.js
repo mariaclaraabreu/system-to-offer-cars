@@ -5,13 +5,8 @@ import Header from '../../components/Header';
 import Input from '../../components/Input';
 import firebase from '../../services/api'
 import Button from '../../components/Button'
-import { List, Avatar } from 'antd';
 import OfferItem from  '../../components/OfferItem';
-import BeetleImg from '../../assets/beetle.jpg';
 import './styles.css';
-
-
-// const { Search } = Input
 
 const Administration = () => {
   const [offers, setOffers] = useState([])
@@ -53,11 +48,7 @@ const Administration = () => {
         const offersList = snapshot.docs.map((doc) => {
           return {
             id: doc.id,
-            board: doc.data().board,
             brand: doc.data().brand,
-            city: doc.data().city,
-            color: doc.data().color,
-            km: doc.data().km,
             model: doc.data().model,
             price: doc.data().price,
             year: doc.data().year,
@@ -74,7 +65,7 @@ const Administration = () => {
       <Header />
       <div className="container">
         <div className="content">
-          <h1>Administration</h1>
+          <h1 className="title-adm">Adm</h1>
           <small>{"Search"}</small>
           <Input 
             placeholder="Search for the offer by car brand name. Ex: Fiat"
@@ -82,7 +73,7 @@ const Administration = () => {
               handleSearchOffer(e.target.value)
             }}
           />
-          <ul>
+          <ul className="list-items">
             {filteredOffers.map(item => (
               <OfferItem 
                 key={item.id}
@@ -91,23 +82,14 @@ const Administration = () => {
                 onClickEdit={() => handleYetImplemented(item.id)}
                 onClickDelete={() => handleDeleteOffer(item.id)}
               >
-                <button>oi</button>
               </OfferItem>
             ))}
-
           </ul>
-
-
-          <OfferItem />
-
-
-          
 
           <Link to='/newoffer'>
             <Button
               name="Add New Offer"
               className="blue"
-              // onClick={handleAddOffer}
             />
           </Link>
 

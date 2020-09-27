@@ -1,30 +1,31 @@
-ul .oc-item-list {
-  /* display: flex;
-  flex-direction: row; */
+.oc-item-list {
   width: 100%;
   display: inline-block;
-  height: auto;
-  margin-bottom: 20px;
+  max-height: 150px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 20px;
 }
 
 .oc-elem-item {
-  /* display: flex;
-  flex-direction: row; */
-  /* width: 30%; */
-  /* margin-right: 30px; */
+  width: auto;
   display: inline-block;
-
 }
 
 .oc-elem-item img {
   width: 70px;
-  height: 50px;
+  height: 60px;
   border-radius: 100%;
-  margin-right: 20px;
+  float: inline-start;
 }
 
 .oc-options-item {
-  margin-left: 35%;
+  float: right;
+  /* margin-left: 35%; */
+}
+
+.infos-item-list {
+  margin-left: 20px;
 }
 
 .button-list {

@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgBeetle from '../../assets/beetle.jpg'
+import ImgPattern from '../../assets/img-pattern.png'
 import Button from '../../components/Button';
 import './styles.css';
 
@@ -10,12 +10,11 @@ const OfferItem = (props) => (
       key={props.id}
     >
       <div className="oc-elem-item">
-        <img src={ImgBeetle} alt="Image car"/>
+        <img src={ImgPattern} alt="Image car"/>
       </div>
-      <div className="oc-elem-item">
-        <h3>{props.brand}</h3>
+      <div className="oc-elem-item infos-item-list">
+        <h3>Brand: {props.brand}</h3>
         <span><strong>Model: </strong>{props.model}</span>
-
       </div>
       <div className="oc-elem-item oc-options-item ">
         <Button
@@ -29,17 +28,7 @@ const OfferItem = (props) => (
           onClick={props.onClickDelete}
         />
       </div>
-    </li>
-  
-
-    // <li
-    //   key={props.id}
-
-    
-    // >
-    //   testando: {brand}
-    // </li>
-      
+    </li>      
 );
 
 export default OfferItem;
