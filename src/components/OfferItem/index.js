@@ -10,7 +10,7 @@ const OfferItem = (props) => (
       key={props.id}
     >
       <div className="oc-elem-item">
-        <img src={ImgPattern} alt="Image car"/>
+        <img src={ImgPattern} alt="Car"/>
       </div>
       <div className="oc-elem-item infos-item-list">
         <h3>Brand: {props.brand}</h3>

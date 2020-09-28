@@ -5,6 +5,7 @@ import Input from '../../components/Input';
 import firebase from '../../services/api'
 import Button from '../../components/Button'
 import OfferItem from  '../../components/OfferItem';
+import ImgLogo from '../../assets/logo.png'
 import './styles.css';
 
 const Administration = () => {
@@ -35,7 +36,7 @@ const Administration = () => {
 
   async function handleDataLoadingUpdate(id) {
     setIsUpdate(true);
-    setOffers(offers.map((offer) => {
+    offers.map(offer => {
       if (offer.id === id) {
         setId(offer.id);
         setBrand(offer.brand);
@@ -43,7 +44,8 @@ const Administration = () => {
         setPrice(offer.price);
         setYear(offer.year);
       }
-    }))
+      return null;
+    })
   }
 
   async function handleUpdateOffer(id) {
@@ -88,7 +90,13 @@ const Administration = () => {
 
   return (
     <>
-      <Header />
+      <Header 
+          linkHome="/"
+          logo={ImgLogo}
+          logoAlt="Offers Cars"
+          nameLinkOne="Offers"
+          nameLinkTwo="Administration"
+        />
       <div className="container">
         <div className="content">
           <h1 className="title-adm">Adm</h1>
@@ -157,7 +165,11 @@ const Administration = () => {
                 className="blue"
                 onClick={() => handleUpdateOffer(id)}
               />
-
+              <Button
+                name="Cancel"
+                className="orange"
+                onClick={() => setIsUpdate(false)}
+              />
             </>
           }
         </div>

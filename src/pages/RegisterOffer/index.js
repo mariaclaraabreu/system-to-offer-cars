@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import Header from  '../../components/Header';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import ImgLogo from '../../assets/logo.png'
 import './styles.css';
 
 const RegisterOffer = () => {
@@ -43,7 +44,13 @@ const RegisterOffer = () => {
 
     return (
       <>
-        <Header />
+        <Header 
+          linkHome="/"
+          logo={ImgLogo}
+          logoAlt="Offers Cars"
+          nameLinkOne="Offers"
+          nameLinkTwo="Administration"
+        />
         <div className="container">
           <div className="content">
             <h1>Register Offer</h1>
