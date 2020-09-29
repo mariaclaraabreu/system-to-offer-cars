@@ -54,7 +54,7 @@ const Offers = () => {
           <div className="content">
             <h1>Offers</h1>
             {offers.map((offer) => (
-              <a href="/" onClick={() => handleAddViews(offer.id)}>
+              <button className="button-card" onClick={() => handleAddViews(offer.id)}>
                 <CardOffer 
                   image={ImgPattern}
                   altImage="Pattern"
@@ -65,7 +65,7 @@ const Offers = () => {
                   year={offer.year}
                   views={offer.views}
                 />
-              </a>
+              </button>
             ))}
           </div>
           
